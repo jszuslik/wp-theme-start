@@ -1,10 +1,10 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Natalie\n"
+"Project-Id-Version: WP_Start\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Mon Aug 08 2016 11:17:38 GMT+0700 (SE Asia Standard Time)\n"
 "PO-Revision-Date: Mon Aug 08 2016 11:17:42 GMT+0700 (SE Asia Standard Time)\n"
-"Last-Translator: Natalie <danny.wpthemes@gmail.com>\n"
+"Last-Translator: WP_Start <joshuaszuslik@gmail.com>\n"
 "Language-Team: \n"
 "Language: English\n"
 "Plural-Forms: nplurals=2; plural=n != 1\n"
@@ -53,11 +53,11 @@ msgstr ""
 msgid "Continue Reading"
 msgstr ""
 
-#: ../core/classes/like-post/natalie-like-post.php:78
+#: ../core/classes/like-post/nrw-like-post.php:78
 msgid "Like this"
 msgstr ""
 
-#: ../core/classes/like-post/natalie-like-post.php:81
+#: ../core/classes/like-post/nrw-like-post.php:81
 msgid "You already liked this!"
 msgstr ""
 
@@ -516,96 +516,96 @@ msgstr ""
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
-#: ../core/functions/customizer/natalie_custom_controll.php:48
+#: ../core/functions/customizer/nrw_custom_controll.php:48
 msgid "&mdash; Select &mdash;"
 msgstr ""
 
-#: ../core/widgets/natalie_categories_images.php:8
+#: ../core/widgets/nrw_categories_images.php:8
 msgid "Categories Images Widget"
 msgstr ""
 
-#: ../core/widgets/natalie_categories_images.php:62
+#: ../core/widgets/nrw_categories_images.php:62
 msgid "Categories"
 msgstr ""
 
-#: ../core/widgets/natalie_categories_images.php:71 ..
-#: /core/widgets/natalie_latest_posts_widget.php:63
+#: ../core/widgets/nrw_categories_images.php:71 ..
+#: /core/widgets/nrw_latest_posts_widget.php:63
 msgid "Title:"
 msgstr ""
 
-#: ../core/widgets/natalie_categories_images.php:75
+#: ../core/widgets/nrw_categories_images.php:75
 msgid "Limit:"
 msgstr ""
 
-#: ../core/widgets/natalie_categories_images.php:79
+#: ../core/widgets/nrw_categories_images.php:79
 msgid "Hide Empty"
 msgstr ""
 
-#: ../core/widgets/natalie_categories_images.php:83
+#: ../core/widgets/nrw_categories_images.php:83
 msgid "Parent"
 msgstr ""
 
-#: ../core/widgets/natalie_categories_images.php:88
+#: ../core/widgets/nrw_categories_images.php:88
 msgid "Order By"
 msgstr ""
 
-#: ../core/widgets/natalie_categories_images.php:90
+#: ../core/widgets/nrw_categories_images.php:90
 msgid "ID"
 msgstr ""
 
-#: ../core/widgets/natalie_categories_images.php:91
+#: ../core/widgets/nrw_categories_images.php:91
 msgid "Name"
 msgstr ""
 
-#: ../core/widgets/natalie_categories_images.php:92
+#: ../core/widgets/nrw_categories_images.php:92
 msgid "Count"
 msgstr ""
 
-#: ../core/widgets/natalie_categories_images.php:94
+#: ../core/widgets/nrw_categories_images.php:94
 msgid ""
 "Sort categories alphabetically, by unique Category ID, or by the count of "
 "posts in that Category"
 msgstr ""
 
-#: ../core/widgets/natalie_categories_images.php:97
+#: ../core/widgets/nrw_categories_images.php:97
 msgid "Order"
 msgstr ""
 
-#: ../core/widgets/natalie_categories_images.php:99
+#: ../core/widgets/nrw_categories_images.php:99
 msgid "ASC"
 msgstr ""
 
-#: ../core/widgets/natalie_categories_images.php:100
+#: ../core/widgets/nrw_categories_images.php:100
 msgid "DESC"
 msgstr ""
 
-#: ../core/widgets/natalie_categories_images.php:102
+#: ../core/widgets/nrw_categories_images.php:102
 msgid ""
 "Sort order for categories (either ascending or descending). The default is "
 "ascending"
 msgstr ""
 
-#: ../core/widgets/natalie_about_widget.php:7
-msgid "NATALIE: About Me Widget"
+#: ../core/widgets/nrw_about_widget.php:7
+msgid "NRW: About Me Widget"
 msgstr ""
 
-#: ../core/widgets/natalie_about_widget.php:12
+#: ../core/widgets/nrw_about_widget.php:12
 msgid "About Me"
 msgstr ""
 
-#: ../core/widgets/natalie_latest_posts_widget.php:6
+#: ../core/widgets/nrw_latest_posts_widget.php:6
 msgid "A widget that displays your latest posts from all categories or a certain"
 msgstr ""
 
-#: ../core/widgets/natalie_latest_posts_widget.php:7
-msgid "NATALIE: Latest Posts"
+#: ../core/widgets/nrw_latest_posts_widget.php:7
+msgid "NRW: Latest Posts"
 msgstr ""
 
-#: ../core/widgets/natalie_latest_posts_widget.php:60
+#: ../core/widgets/nrw_latest_posts_widget.php:60
 msgid "Latest Posts"
 msgstr ""
 
-#: ../core/widgets/natalie_latest_posts_widget.php:77
+#: ../core/widgets/nrw_latest_posts_widget.php:77
 msgid "Number of posts to show:"
 msgstr ""
 
@@ -772,11 +772,11 @@ msgid "Archives"
 msgstr ""
 
 #. Name of the theme
-msgid "Natalie"
+msgid "WP_Start"
 msgstr ""
 
 #. Theme URI of the theme
-msgid "http://natalie.az-theme.net"
+msgid "http://github.com/jszuslik"
 msgstr ""
 
 #. Description of the theme
@@ -784,9 +784,9 @@ msgid "A Responsive WordPress Blog Theme"
 msgstr ""
 
 #. Author of the theme
-msgid "DannyWordPress"
+msgid "Joshua Szuslik"
 msgstr ""
 
 #. Author URI of the theme
-msgid "http://danny.az-theme.net"
+msgid "https://joshuaszuslik.us"
 msgstr ""
