@@ -1,47 +1,47 @@
 <?php
-function natalie_sanitize_default( $value ) {
+function nrw_sanitize_default( $value ) {
 	return $value;
 }
 
-/** Natalie - Customizer - Add Settings */
-function natalie_register_theme_customizer( $wp_customize )
+/** nrw - Customizer - Add Settings */
+function nrw_register_theme_customizer( $wp_customize )
 {
 	/** Add Sections -----------------------------------------------------------------------------------------------------------*/
-    $wp_customize->add_section( 'natalie_new_section_header', array(
+    $wp_customize->add_section( 'nrw_new_section_header', array(
    		'title' => 'Logo upload',
    		'description' => null,
         'priority' => 1
 	) );
-    $wp_customize->add_section( 'natalie_new_section_blog_layout', array(
+    $wp_customize->add_section( 'nrw_new_section_blog_layout', array(
    		'title' => 'Blog Settings',
    		'description' => null,
         'priority' => 2
 	) );    
-    $wp_customize->add_section( 'natalie_new_section_featured' , array(
+    $wp_customize->add_section( 'nrw_new_section_featured' , array(
 		'title' => 'Featured Area Settings',
 		'description' => '',
         'priority' => 3
 	) );
-    $wp_customize->add_section( 'natalie_new_section_promobox', array(
+    $wp_customize->add_section( 'nrw_new_section_promobox', array(
    		'title' => 'Promo Boxes',
    		'description' => null,
         'priority' => 4
 	) );
-    $wp_customize->add_section( 'natalie_new_section_social_media', array(
+    $wp_customize->add_section( 'nrw_new_section_social_media', array(
    		'title' => 'Social Media Settings',
    		'description' => 'Enter your social media URL. Icons will not show if left blank.',
         'priority' => 5
 	) );
-    $wp_customize->add_section( 'natalie_new_section_footer', array(
+    $wp_customize->add_section( 'nrw_new_section_footer', array(
    		'title' => 'Footer Settings',
    		'description'  => '',
         'priority' => 6
 	) );
-    $wp_customize->add_section( 'natalie_new_section_color_accent', array(
+    $wp_customize->add_section( 'nrw_new_section_color_accent', array(
    		'title'        => 'Colors: Accent',
    		'description'  => ''
 	) );
-    $wp_customize->add_section( 'natalie_new_section_custom_css', array(
+    $wp_customize->add_section( 'nrw_new_section_custom_css', array(
    		'title'        => 'Custom CSS',
    		'description'  => 'Add your custom CSS which will overwrite the theme CSS'
 	) );
@@ -49,212 +49,212 @@ function natalie_register_theme_customizer( $wp_customize )
     /** Add Settings ------------------------------------------------------------------------------------------------------------*/
     
     /** Blog layout settings */
-    $wp_customize->add_setting( 'natalie_blog_layout', array(
+    $wp_customize->add_setting( 'nrw_blog_layout', array(
         'default' => 'standard',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );
     
-    $wp_customize->add_setting( 'natalie_archive_layout', array(
+    $wp_customize->add_setting( 'nrw_archive_layout', array(
         'default' => 'standard',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );
     
-    $wp_customize->add_setting( 'natalie_hompage_disable_sidebar', array(
+    $wp_customize->add_setting( 'nrw_hompage_disable_sidebar', array(
         'default' => '',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );
     
-    $wp_customize->add_setting( 'natalie_archive_disable_sidebar', array(
+    $wp_customize->add_setting( 'nrw_archive_disable_sidebar', array(
         'default' => '',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );
     
-    $wp_customize->add_setting( 'natalie_single_post_disable_sidebar', array(
+    $wp_customize->add_setting( 'nrw_single_post_disable_sidebar', array(
         'default' => '',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );
-  	$wp_customize->add_setting( 'natalie_disable_archive_title', array(
+  	$wp_customize->add_setting( 'nrw_disable_archive_title', array(
         'default' => '',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );
 
-  	$wp_customize->add_setting( 'natalie_display_featured_image_single', array(
+  	$wp_customize->add_setting( 'nrw_display_featured_image_single', array(
         'default' => '',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );
     
-    $wp_customize->add_setting( 'natalie_standard_posts_per_page', array(
+    $wp_customize->add_setting( 'nrw_standard_posts_per_page', array(
         'default' => '4',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );
     
-    $wp_customize->add_setting( 'natalie_2col_grid_posts_per_page', array(
+    $wp_customize->add_setting( 'nrw_2col_grid_posts_per_page', array(
         'default' => '10',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );
     
-    $wp_customize->add_setting( 'natalie_3col_grid_posts_per_page', array(
+    $wp_customize->add_setting( 'nrw_3col_grid_posts_per_page', array(
         'default' => '9',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );
     
-    $wp_customize->add_setting( 'natalie_woo_posts_per_page', array(
+    $wp_customize->add_setting( 'nrw_woo_posts_per_page', array(
         'default' => '12',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );
     
     /** PromoBox */
-    $wp_customize->add_setting( 'natalie_promobox_show', array(
+    $wp_customize->add_setting( 'nrw_promobox_show', array(
         'default' => '',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );
     
-    $wp_customize->add_setting( 'natalie_promobox_one_title', array(
+    $wp_customize->add_setting( 'nrw_promobox_one_title', array(
         'default' => '',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );
     
-    $wp_customize->add_setting( 'natalie_promobox_one_link', array(
+    $wp_customize->add_setting( 'nrw_promobox_one_link', array(
         'default' => '',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );
     
-    $wp_customize->add_setting( 'natalie_promobox_one_image', array(
+    $wp_customize->add_setting( 'nrw_promobox_one_image', array(
         'default' => '',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );
     
-    $wp_customize->add_setting( 'natalie_promobox_two_title', array(
+    $wp_customize->add_setting( 'nrw_promobox_two_title', array(
         'default' => '',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );
     
-    $wp_customize->add_setting( 'natalie_promobox_two_link', array(
+    $wp_customize->add_setting( 'nrw_promobox_two_link', array(
         'default' => '',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );
     
-    $wp_customize->add_setting( 'natalie_promobox_two_image', array(
+    $wp_customize->add_setting( 'nrw_promobox_two_image', array(
         'default' => '',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );
     
-    $wp_customize->add_setting( 'natalie_promobox_three_title', array(
+    $wp_customize->add_setting( 'nrw_promobox_three_title', array(
         'default' => '',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );
     
-    $wp_customize->add_setting( 'natalie_promobox_three_link', array(
+    $wp_customize->add_setting( 'nrw_promobox_three_link', array(
         'default' => '',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );
     
-    $wp_customize->add_setting( 'natalie_promobox_three_image', array(
+    $wp_customize->add_setting( 'nrw_promobox_three_image', array(
         'default' => '',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );
     
     // Featured area
-	$wp_customize->add_setting( 'natalie_featured_slider', array(
+	$wp_customize->add_setting( 'nrw_featured_slider', array(
         'default' => false,
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );
-	$wp_customize->add_setting( 'natalie_featured_cat', array(
+	$wp_customize->add_setting( 'nrw_featured_cat', array(
         'default' => '',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );
-	$wp_customize->add_setting( 'natalie_featured_id', array(
+	$wp_customize->add_setting( 'nrw_featured_id', array(
         'default' => '',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );
-	$wp_customize->add_setting( 'natalie_featured_slider_slides', array(
+	$wp_customize->add_setting( 'nrw_featured_slider_slides', array(
         'default' => '5',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );
     // Header and Logo
-    $wp_customize->add_setting( 'natalie_logo', array(
+    $wp_customize->add_setting( 'nrw_logo', array(
         'default'           => '',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );
-    $wp_customize->add_setting( 'natalie_logo_footer', array(
+    $wp_customize->add_setting( 'nrw_logo_footer', array(
         'default'           => '',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );
     // Social media settings
-    $wp_customize->add_setting( 'natalie_facebook', array(
+    $wp_customize->add_setting( 'nrw_facebook', array(
         'default'           => '',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );
-    $wp_customize->add_setting( 'natalie_twitter', array(
+    $wp_customize->add_setting( 'nrw_twitter', array(
         'default'           => '',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );
-    $wp_customize->add_setting( 'natalie_instagram', array(
+    $wp_customize->add_setting( 'nrw_instagram', array(
         'default'           => '',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );
-    $wp_customize->add_setting( 'natalie_pinterest', array(
+    $wp_customize->add_setting( 'nrw_pinterest', array(
         'default'           => '',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );
-    $wp_customize->add_setting( 'natalie_tumblr', array(
+    $wp_customize->add_setting( 'nrw_tumblr', array(
         'default'           => '',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );
-    $wp_customize->add_setting( 'natalie_bloglovin', array(
+    $wp_customize->add_setting( 'nrw_bloglovin', array(
         'default'           => '',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );
-    $wp_customize->add_setting( 'natalie_tumblr', array(
+    $wp_customize->add_setting( 'nrw_tumblr', array(
         'default'           => '',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );
-    $wp_customize->add_setting( 'natalie_google', array(
+    $wp_customize->add_setting( 'nrw_google', array(
         'default'           => '',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );
-    $wp_customize->add_setting( 'natalie_youtube', array(
+    $wp_customize->add_setting( 'nrw_youtube', array(
         'default'           => '',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );
-    $wp_customize->add_setting( 'natalie_dribbble', array(
+    $wp_customize->add_setting( 'nrw_dribbble', array(
         'default'           => '',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );
-    $wp_customize->add_setting( 'natalie_soundcloud', array(
+    $wp_customize->add_setting( 'nrw_soundcloud', array(
         'default'           => '',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );    
-    $wp_customize->add_setting( 'natalie_vimeo', array(
+    $wp_customize->add_setting( 'nrw_vimeo', array(
         'default'           => '',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );
-    $wp_customize->add_setting( 'natalie_linkedin', array(
+    $wp_customize->add_setting( 'nrw_linkedin', array(
         'default'           => '',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );
     // Accent
-    $wp_customize->add_setting( 'natalie_accent_color', array(
+    $wp_customize->add_setting( 'nrw_accent_color', array(
         'default'           => '#f37e7e',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );    
     // Footer
-    $wp_customize->add_setting( 'natalie_footer_disable_social', array(
+    $wp_customize->add_setting( 'nrw_footer_disable_social', array(
         'default'           => '',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );
-    $wp_customize->add_setting( 'natalie_footer_copyright', array(
+    $wp_customize->add_setting( 'nrw_footer_copyright', array(
         'default'           => '',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );
-    $wp_customize->add_setting( 'natalie_logo_footer', array(
+    $wp_customize->add_setting( 'nrw_logo_footer', array(
         'default'           => '',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );
     // Custom CSS
-	$wp_customize->add_setting( 'natalie_custom_css', array(
+	$wp_customize->add_setting( 'nrw_custom_css', array(
         'default'           => '',
-        'sanitize_callback' => 'natalie_sanitize_default'
+        'sanitize_callback' => 'nrw_sanitize_default'
     ) );
     
     /** Add Constrol ------------------------------------------------------------------------------------------------------------*/
@@ -265,8 +265,8 @@ function natalie_register_theme_customizer( $wp_customize )
 			'upload_logo',
 			array(
 				'label'      => 'Upload logo top',
-				'section'    => 'natalie_new_section_header',
-				'settings'   => 'natalie_logo',
+				'section'    => 'nrw_new_section_header',
+				'settings'   => 'nrw_logo',
 				'priority'	 => 1
 			)
 		)
@@ -276,11 +276,11 @@ function natalie_register_theme_customizer( $wp_customize )
     $wp_customize->add_control(
 		new WP_Customize_Control(
 			$wp_customize,
-			'natalie_promobox_show',
+			'nrw_promobox_show',
 			array(
 				'label'      => 'Show Promobox',
-				'section'    => 'natalie_new_section_promobox',
-				'settings'   => 'natalie_promobox_show',
+				'section'    => 'nrw_new_section_promobox',
+				'settings'   => 'nrw_promobox_show',
 				'type'		 => 'checkbox'
 			)
 		)
@@ -289,11 +289,11 @@ function natalie_register_theme_customizer( $wp_customize )
     $wp_customize->add_control(
 		new WP_Customize_Control(
 			$wp_customize,
-			'natalie_promobox_one_title',
+			'nrw_promobox_one_title',
 			array(
 				'label'      => 'Box 1 # Title',
-				'section'    => 'natalie_new_section_promobox',
-				'settings'   => 'natalie_promobox_one_title',
+				'section'    => 'nrw_new_section_promobox',
+				'settings'   => 'nrw_promobox_one_title',
 				'type'		 => 'text'
 			)
 		)
@@ -302,11 +302,11 @@ function natalie_register_theme_customizer( $wp_customize )
     $wp_customize->add_control(
 		new WP_Customize_Control(
 			$wp_customize,
-			'natalie_promobox_one_link',
+			'nrw_promobox_one_link',
 			array(
 				'label'      => 'Box 1 # URL',
-				'section'    => 'natalie_new_section_promobox',
-				'settings'   => 'natalie_promobox_one_link',
+				'section'    => 'nrw_new_section_promobox',
+				'settings'   => 'nrw_promobox_one_link',
 				'type'		 => 'text'
 			)
 		)
@@ -315,11 +315,11 @@ function natalie_register_theme_customizer( $wp_customize )
     $wp_customize->add_control(
 		new WP_Customize_Image_Control(
 			$wp_customize,
-			'natalie_promobox_one_image',
+			'nrw_promobox_one_image',
 			array(
 				'label'      => 'Box 1 # Image',
-				'section'    => 'natalie_new_section_promobox',
-				'settings'   => 'natalie_promobox_one_image'
+				'section'    => 'nrw_new_section_promobox',
+				'settings'   => 'nrw_promobox_one_image'
 			)
 		)
 	);
@@ -327,11 +327,11 @@ function natalie_register_theme_customizer( $wp_customize )
     $wp_customize->add_control(
 		new WP_Customize_Control(
 			$wp_customize,
-			'natalie_promobox_two_title',
+			'nrw_promobox_two_title',
 			array(
 				'label'      => 'Box 2 # Title',
-				'section'    => 'natalie_new_section_promobox',
-				'settings'   => 'natalie_promobox_two_title',
+				'section'    => 'nrw_new_section_promobox',
+				'settings'   => 'nrw_promobox_two_title',
 				'type'		 => 'text'
 			)
 		)
@@ -340,11 +340,11 @@ function natalie_register_theme_customizer( $wp_customize )
     $wp_customize->add_control(
 		new WP_Customize_Control(
 			$wp_customize,
-			'natalie_promobox_two_link',
+			'nrw_promobox_two_link',
 			array(
 				'label'      => 'Box 2 # URL',
-				'section'    => 'natalie_new_section_promobox',
-				'settings'   => 'natalie_promobox_two_link',
+				'section'    => 'nrw_new_section_promobox',
+				'settings'   => 'nrw_promobox_two_link',
 				'type'		 => 'text'
 			)
 		)
@@ -353,11 +353,11 @@ function natalie_register_theme_customizer( $wp_customize )
     $wp_customize->add_control(
 		new WP_Customize_Image_Control(
 			$wp_customize,
-			'natalie_promobox_two_image',
+			'nrw_promobox_two_image',
 			array(
 				'label'      => 'Box 2 # Image',
-				'section'    => 'natalie_new_section_promobox',
-				'settings'   => 'natalie_promobox_two_image'
+				'section'    => 'nrw_new_section_promobox',
+				'settings'   => 'nrw_promobox_two_image'
 			)
 		)
 	);
@@ -365,11 +365,11 @@ function natalie_register_theme_customizer( $wp_customize )
     $wp_customize->add_control(
 		new WP_Customize_Control(
 			$wp_customize,
-			'natalie_promobox_three_title',
+			'nrw_promobox_three_title',
 			array(
 				'label'      => 'Box 3 # Title',
-				'section'    => 'natalie_new_section_promobox',
-				'settings'   => 'natalie_promobox_three_title',
+				'section'    => 'nrw_new_section_promobox',
+				'settings'   => 'nrw_promobox_three_title',
 				'type'		 => 'text'
 			)
 		)
@@ -378,11 +378,11 @@ function natalie_register_theme_customizer( $wp_customize )
     $wp_customize->add_control(
 		new WP_Customize_Control(
 			$wp_customize,
-			'natalie_promobox_three_link',
+			'nrw_promobox_three_link',
 			array(
 				'label'      => 'Box 3 # URL',
-				'section'    => 'natalie_new_section_promobox',
-				'settings'   => 'natalie_promobox_three_link',
+				'section'    => 'nrw_new_section_promobox',
+				'settings'   => 'nrw_promobox_three_link',
 				'type'		 => 'text'
 			)
 		)
@@ -391,11 +391,11 @@ function natalie_register_theme_customizer( $wp_customize )
     $wp_customize->add_control(
 		new WP_Customize_Image_Control(
 			$wp_customize,
-			'natalie_promobox_three_image',
+			'nrw_promobox_three_image',
 			array(
 				'label'      => 'Box 3 # Image',
-				'section'    => 'natalie_new_section_promobox',
-				'settings'   => 'natalie_promobox_three_image'
+				'section'    => 'nrw_new_section_promobox',
+				'settings'   => 'nrw_promobox_three_image'
 			)
 		)
 	);
@@ -404,11 +404,11 @@ function natalie_register_theme_customizer( $wp_customize )
     $wp_customize->add_control(
 		new WP_Customize_Control(
 			$wp_customize,
-			'natalie_blog_layout',
+			'nrw_blog_layout',
 			array(
 				'label'          => 'Homepage Layout',
-				'section'        => 'natalie_new_section_blog_layout',
-				'settings'       => 'natalie_blog_layout',
+				'section'        => 'nrw_new_section_blog_layout',
+				'settings'       => 'nrw_blog_layout',
 				'type'           => 'radio',
 				'choices'        => array(
 					'standard' => 'Standard Layout',
@@ -422,11 +422,11 @@ function natalie_register_theme_customizer( $wp_customize )
     $wp_customize->add_control(
 		new WP_Customize_Control(
 			$wp_customize,
-			'natalie_archive_layout',
+			'nrw_archive_layout',
 			array(
 				'label'          => 'Archive Layout',
-				'section'        => 'natalie_new_section_blog_layout',
-				'settings'       => 'natalie_archive_layout',
+				'section'        => 'nrw_new_section_blog_layout',
+				'settings'       => 'nrw_archive_layout',
 				'type'           => 'radio',
 				'choices'        => array(
 					'standard' => 'Standard Layout',
@@ -440,11 +440,11 @@ function natalie_register_theme_customizer( $wp_customize )
     $wp_customize->add_control(
 		new WP_Customize_Control(
 			$wp_customize,
-			'natalie_hompage_disable_sidebar',
+			'nrw_hompage_disable_sidebar',
 			array(
 				'label'      => 'Hide sidebar on HOMEPAGE',
-				'section'    => 'natalie_new_section_blog_layout',
-				'settings'   => 'natalie_hompage_disable_sidebar',
+				'section'    => 'nrw_new_section_blog_layout',
+				'settings'   => 'nrw_hompage_disable_sidebar',
 				'type'		 => 'checkbox'
 			)
 		)
@@ -453,11 +453,11 @@ function natalie_register_theme_customizer( $wp_customize )
     $wp_customize->add_control(
 		new WP_Customize_Control(
 			$wp_customize,
-			'natalie_archive_disable_sidebar',
+			'nrw_archive_disable_sidebar',
 			array(
 				'label'      => 'Hide sidebar on ARCHIVE',
-				'section'    => 'natalie_new_section_blog_layout',
-				'settings'   => 'natalie_archive_disable_sidebar',
+				'section'    => 'nrw_new_section_blog_layout',
+				'settings'   => 'nrw_archive_disable_sidebar',
 				'type'		 => 'checkbox'
 			)
 		)
@@ -466,11 +466,11 @@ function natalie_register_theme_customizer( $wp_customize )
     $wp_customize->add_control(
 		new WP_Customize_Control(
 			$wp_customize,
-			'natalie_single_post_disable_sidebar',
+			'nrw_single_post_disable_sidebar',
 			array(
 				'label'      => 'Hide sidebar on SINGLE POST',
-				'section'    => 'natalie_new_section_blog_layout',
-				'settings'   => 'natalie_single_post_disable_sidebar',
+				'section'    => 'nrw_new_section_blog_layout',
+				'settings'   => 'nrw_single_post_disable_sidebar',
 				'type'		 => 'checkbox'
 			)
 		)
@@ -478,11 +478,11 @@ function natalie_register_theme_customizer( $wp_customize )
   $wp_customize->add_control(
 		new WP_Customize_Control(
 			$wp_customize,
-			'natalie_disable_archive_title',
+			'nrw_disable_archive_title',
 			array(
 				'label'      => 'Hide archive title?',
-				'section'    => 'natalie_new_section_blog_layout',
-				'settings'   => 'natalie_disable_archive_title',
+				'section'    => 'nrw_new_section_blog_layout',
+				'settings'   => 'nrw_disable_archive_title',
 				'type'		 => 'checkbox'
 			)
 		)
@@ -491,11 +491,11 @@ function natalie_register_theme_customizer( $wp_customize )
     $wp_customize->add_control(
 		new WP_Customize_Control(
 			$wp_customize,
-			'natalie_standard_posts_per_page',
+			'nrw_standard_posts_per_page',
 			array(
 				'label'      => 'Standard layout # Posts per page',
-				'section'    => 'natalie_new_section_blog_layout',
-				'settings'   => 'natalie_standard_posts_per_page',
+				'section'    => 'nrw_new_section_blog_layout',
+				'settings'   => 'nrw_standard_posts_per_page',
 				'type'		 => 'text'
 			)
 		)
@@ -504,11 +504,11 @@ function natalie_register_theme_customizer( $wp_customize )
     $wp_customize->add_control(
 		new WP_Customize_Control(
 			$wp_customize,
-			'natalie_2col_grid_posts_per_page',
+			'nrw_2col_grid_posts_per_page',
 			array(
 				'label'      => '2 Col Grid # Posts per page',
-				'section'    => 'natalie_new_section_blog_layout',
-				'settings'   => 'natalie_2col_grid_posts_per_page',
+				'section'    => 'nrw_new_section_blog_layout',
+				'settings'   => 'nrw_2col_grid_posts_per_page',
 				'type'		 => 'text'
 			)
 		)
@@ -517,11 +517,11 @@ function natalie_register_theme_customizer( $wp_customize )
     $wp_customize->add_control(
 		new WP_Customize_Control(
 			$wp_customize,
-			'natalie_3col_grid_posts_per_page',
+			'nrw_3col_grid_posts_per_page',
 			array(
 				'label'      => '3 Col Grid # Posts per page',
-				'section'    => 'natalie_new_section_blog_layout',
-				'settings'   => 'natalie_3col_grid_posts_per_page',
+				'section'    => 'nrw_new_section_blog_layout',
+				'settings'   => 'nrw_3col_grid_posts_per_page',
 				'type'		 => 'text'
 			)
 		)
@@ -530,11 +530,11 @@ function natalie_register_theme_customizer( $wp_customize )
     $wp_customize->add_control(
 		new WP_Customize_Control(
 			$wp_customize,
-			'natalie_woo_posts_per_page',
+			'nrw_woo_posts_per_page',
 			array(
 				'label'      => 'Woocommerce # Posts per page',
-				'section'    => 'natalie_new_section_blog_layout',
-				'settings'   => 'natalie_woo_posts_per_page',
+				'section'    => 'nrw_new_section_blog_layout',
+				'settings'   => 'nrw_woo_posts_per_page',
 				'type'		 => 'text'
 			)
 		)
@@ -546,8 +546,8 @@ function natalie_register_theme_customizer( $wp_customize )
 			'featured_slider',
 			array(
 				'label'      => 'Enable Featured Slider',
-				'section'    => 'natalie_new_section_featured',
-				'settings'   => 'natalie_featured_slider',
+				'section'    => 'nrw_new_section_featured',
+				'settings'   => 'nrw_featured_slider',
 				'type'		 => 'checkbox',
 				'priority'	 => 2
 			)
@@ -560,8 +560,8 @@ function natalie_register_theme_customizer( $wp_customize )
 			'featured_cat',
 			array(
 				'label'    => 'Select Featured Category',
-				'settings' => 'natalie_featured_cat',
-				'section'  => 'natalie_new_section_featured',
+				'settings' => 'nrw_featured_cat',
+				'section'  => 'nrw_new_section_featured',
 				'priority'	 => 3
 			)
 		)
@@ -572,8 +572,8 @@ function natalie_register_theme_customizer( $wp_customize )
 			'featured_id',
 			array(
 				'label'      => 'Select featured post/page IDs',
-				'section'    => 'natalie_new_section_featured',
-				'settings'   => 'natalie_featured_id',
+				'section'    => 'nrw_new_section_featured',
+				'settings'   => 'nrw_featured_id',
 				'type'		 => 'text',
 				'priority'	 => 4
 			)
@@ -586,8 +586,8 @@ function natalie_register_theme_customizer( $wp_customize )
 			'featured_slider_slides',
 			array(
 				'label'      => 'Amount of Slides',
-				'section'    => 'natalie_new_section_featured',
-				'settings'   => 'natalie_featured_slider_slides',
+				'section'    => 'nrw_new_section_featured',
+				'settings'   => 'nrw_featured_slider_slides',
 				'type'		 => 'number',
 				'priority'	 => 5
 			)
@@ -600,8 +600,8 @@ function natalie_register_theme_customizer( $wp_customize )
 			'facebook',
 			array(
 				'label'      => 'Facebook',
-				'section'    => 'natalie_new_section_social_media',
-				'settings'   => 'natalie_facebook',
+				'section'    => 'nrw_new_section_social_media',
+				'settings'   => 'nrw_facebook',
 				'type'		 => 'text',
 				'priority'	 => 1
 			)
@@ -613,8 +613,8 @@ function natalie_register_theme_customizer( $wp_customize )
 			'twitter',
 			array(
 				'label'      => 'Twitter',
-				'section'    => 'natalie_new_section_social_media',
-				'settings'   => 'natalie_twitter',
+				'section'    => 'nrw_new_section_social_media',
+				'settings'   => 'nrw_twitter',
 				'type'		 => 'text',
 				'priority'	 => 2
 			)
@@ -626,8 +626,8 @@ function natalie_register_theme_customizer( $wp_customize )
 			'instagram',
 			array(
 				'label'      => 'Instagram',
-				'section'    => 'natalie_new_section_social_media',
-				'settings'   => 'natalie_instagram',
+				'section'    => 'nrw_new_section_social_media',
+				'settings'   => 'nrw_instagram',
 				'type'		 => 'text',
 				'priority'	 => 3
 			)
@@ -639,8 +639,8 @@ function natalie_register_theme_customizer( $wp_customize )
 			'pinterest',
 			array(
 				'label'      => 'Pinterest',
-				'section'    => 'natalie_new_section_social_media',
-				'settings'   => 'natalie_pinterest',
+				'section'    => 'nrw_new_section_social_media',
+				'settings'   => 'nrw_pinterest',
 				'type'		 => 'text',
 				'priority'	 => 4
 			)
@@ -652,8 +652,8 @@ function natalie_register_theme_customizer( $wp_customize )
 			'bloglovin',
 			array(
 				'label'      => 'Bloglovin',
-				'section'    => 'natalie_new_section_social_media',
-				'settings'   => 'natalie_bloglovin',
+				'section'    => 'nrw_new_section_social_media',
+				'settings'   => 'nrw_bloglovin',
 				'type'		 => 'text',
 				'priority'	 => 5
 			)
@@ -665,8 +665,8 @@ function natalie_register_theme_customizer( $wp_customize )
 			'google',
 			array(
 				'label'      => 'Google Plus',
-				'section'    => 'natalie_new_section_social_media',
-				'settings'   => 'natalie_google',
+				'section'    => 'nrw_new_section_social_media',
+				'settings'   => 'nrw_google',
 				'type'		 => 'text',
 				'priority'	 => 6
 			)
@@ -678,8 +678,8 @@ function natalie_register_theme_customizer( $wp_customize )
 			'tumblr',
 			array(
 				'label'      => 'Tumblr',
-				'section'    => 'natalie_new_section_social_media',
-				'settings'   => 'natalie_tumblr',
+				'section'    => 'nrw_new_section_social_media',
+				'settings'   => 'nrw_tumblr',
 				'type'		 => 'text',
 				'priority'	 => 7
 			)
@@ -691,8 +691,8 @@ function natalie_register_theme_customizer( $wp_customize )
 			'youtube',
 			array(
 				'label'      => 'Youtube',
-				'section'    => 'natalie_new_section_social_media',
-				'settings'   => 'natalie_youtube',
+				'section'    => 'nrw_new_section_social_media',
+				'settings'   => 'nrw_youtube',
 				'type'		 => 'text',
 				'priority'	 => 8
 			)
@@ -704,8 +704,8 @@ function natalie_register_theme_customizer( $wp_customize )
 			'dribbble',
 			array(
 				'label'      => 'Dribbble',
-				'section'    => 'natalie_new_section_social_media',
-				'settings'   => 'natalie_dribbble',
+				'section'    => 'nrw_new_section_social_media',
+				'settings'   => 'nrw_dribbble',
 				'type'		 => 'text',
 				'priority'	 => 9
 			)
@@ -717,8 +717,8 @@ function natalie_register_theme_customizer( $wp_customize )
 			'soundcloud',
 			array(
 				'label'      => 'Soundcloud',
-				'section'    => 'natalie_new_section_social_media',
-				'settings'   => 'natalie_soundcloud',
+				'section'    => 'nrw_new_section_social_media',
+				'settings'   => 'nrw_soundcloud',
 				'type'		 => 'text',
 				'priority'	 => 10
 			)
@@ -730,8 +730,8 @@ function natalie_register_theme_customizer( $wp_customize )
 			'vimeo',
 			array(
 				'label'      => 'Vimeo',
-				'section'    => 'natalie_new_section_social_media',
-				'settings'   => 'natalie_vimeo',
+				'section'    => 'nrw_new_section_social_media',
+				'settings'   => 'nrw_vimeo',
 				'type'		 => 'text',
 				'priority'	 => 11
 			)
@@ -743,8 +743,8 @@ function natalie_register_theme_customizer( $wp_customize )
 			'linkedin',
 			array(
 				'label'      => 'Linkedin (Use full URL to your Linkedin profile)',
-				'section'    => 'natalie_new_section_social_media',
-				'settings'   => 'natalie_linkedin',
+				'section'    => 'nrw_new_section_social_media',
+				'settings'   => 'nrw_linkedin',
 				'type'		 => 'text',
 				'priority'	 => 12
 			)
@@ -757,8 +757,8 @@ function natalie_register_theme_customizer( $wp_customize )
 			'accent_color',
 			array(
 				'label'      => 'Accent Color',
-				'section'    => 'natalie_new_section_color_accent',
-				'settings'   => 'natalie_accent_color',
+				'section'    => 'nrw_new_section_color_accent',
+				'settings'   => 'nrw_accent_color',
 				'priority'	 => 1
 			)
 		)
@@ -770,8 +770,8 @@ function natalie_register_theme_customizer( $wp_customize )
 			'footer_copyright',
 			array(
 				'label'      => 'Footer copyright text',
-				'section'    => 'natalie_new_section_footer',
-				'settings'   => 'natalie_footer_copyright',
+				'section'    => 'nrw_new_section_footer',
+				'settings'   => 'nrw_footer_copyright',
 				'type'		 => 'text',
 				'priority'	 => 2
 			)
@@ -784,8 +784,8 @@ function natalie_register_theme_customizer( $wp_customize )
 			'custom_css',
 			array(
 				'label'      => 'Custom CSS',
-				'section'    => 'natalie_new_section_custom_css',
-				'settings'   => 'natalie_custom_css',
+				'section'    => 'nrw_new_section_custom_css',
+				'settings'   => 'nrw_custom_css',
 				'type'		 => 'custom_css',
 				'priority'	 => 1
 			)
@@ -799,4 +799,4 @@ function natalie_register_theme_customizer( $wp_customize )
 	$wp_customize->remove_section( 'colors');
 	$wp_customize->remove_section( 'background_image');
 }
-add_action( 'customize_register', 'natalie_register_theme_customizer' );
+add_action( 'customize_register', 'nrw_register_theme_customizer' );
