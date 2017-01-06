@@ -1,7 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Joshua
- * Date: 1/4/2017
- * Time: 11:53 AM
- */
+if ( function_exists('nrw_require_file') ) {
+
+    // Load Classes
+    nrw_require_file( NRW_CORE_CLASSES . 'class-tgm-plugin-activation.php');
+
+}
