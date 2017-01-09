@@ -1,7 +1,11 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Joshua
- * Date: 1/4/2017
- * Time: 11:53 AM
- */
+<?php get_header(); ?>
+    <div class="container">
+        <div id="main">
+            <div class="error-page">
+                <h1>404</h1>
+                <p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', NRW_TEXT_DOMAIN ); ?></p>
+                <?php get_search_form(); ?>
+            </div>
+        </div>
+    </div>
+<?php get_footer(); ?>

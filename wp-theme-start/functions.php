@@ -101,3 +101,52 @@ function nrw_register_required_plugins() {
     );
     tgmpa($plugins, $config);
 }
+
+/**
+ * Blog layout settings
+ */
+function nrw_blog_config()
+{
+    if ( is_home() )
+    {
+        $nrw_blog_layout       = get_theme_mod('nrw_blog_layout', 'standard');
+        $nrw_disable_sidebar   = get_theme_mod('nrw_hompage_disable_sidebar');
+
+        if ( isset($_REQUEST['layout']) && trim($_REQUEST['layout']) != '' ) {
+            $nrw_blog_layout = trim($_REQUEST['layout']);
+        }
+    }
+    elseif ( is_single() )
+    {
+        $nrw_disable_sidebar   = get_theme_mod('nrw_single_post_disable_sidebar');
+        $nrw_blog_layout       = null;
+    }
+    else
+    {
+        $nrw_blog_layout       = get_theme_mod('nrw_archive_layout', 'standard');
+        $nrw_disable_sidebar   = get_theme_mod('nrw_archive_disable_sidebar');
+    }
+
+    if ( isset($_REQUEST['sidebar']) && trim($_REQUEST['sidebar']) == 'no' ) {
+        $nrw_disable_sidebar = true;
+    }
+
+    if ( $nrw_blog_layout == '3col_grid' ) $nrw_disable_sidebar = true;
+
+    if ( $nrw_disable_sidebar ) {
+        $nrw_blog_column = 12;
+        $nrw_blog_column_sm  = 12;
+    } else {
+        $nrw_blog_column  = 9;
+        $nrw_blog_column_sm = 8;
+    }
+
+    $nrw_blog = array();
+    $nrw_blog['layout']            = $nrw_blog_layout;
+    $nrw_blog['disable_sidebar']   = $nrw_disable_sidebar;
+    $nrw_blog['column']            = $nrw_blog_column;
+    $nrw_blog['column_sm']         = $nrw_blog_column_sm;
+
+
+    return $nrw_blog;
+}
