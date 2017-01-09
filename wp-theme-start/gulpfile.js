@@ -1,7 +1,7 @@
-var devDomain = 'lotte.dev';
+var devDomain = 'norulesweb.dev';
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var minifyCss = require('gulp-minify-css');
+// var minifyCss = require('gulp-minify-css');
 var browserSync = require('browser-sync').create();
 
 gulp.task('default', function () {
