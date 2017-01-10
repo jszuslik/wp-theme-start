@@ -7,14 +7,14 @@ if ( function_exists('nrw_require_file') ) {
     nrw_require_file( NRW_CORE_CLASSES . 'like-post/nrw-like-post.php' );
 
     // Load Functions
-    nrw_require_file( NRW_CORE_FUNCTIONS . 'customizer/nrw_custom_control.php' );
-    nrw_require_file( NRW_CORE_FUNCTIONS . 'customizer/nrw_customizer_settings.php' );
-    nrw_require_file( NRW_CORE_FUNCTIONS . 'customizer/nrw_customizer_style.php' );
-    nrw_require_file( NRW_CORE_FUNCTIONS . 'nrw_resize_image.php' );
+    nrw_require_file( NRW_CORE_FUNCTIONS . 'customizer/nrw-custom-control.php' );
+    nrw_require_file( NRW_CORE_FUNCTIONS . 'customizer/nrw-customizer-settings.php' );
+    nrw_require_file( NRW_CORE_FUNCTIONS . 'customizer/nrw-customizer-style.php' );
+    nrw_require_file( NRW_CORE_FUNCTIONS . 'nrw-resize-image.php' );
 
     // Load Widgets
-    nrw_require_file( NRW_CORE_WIDGETS . 'nrw_about_widget.php' );
-    nrw_require_file( NRW_CORE_WIDGETS . 'nrw_latest_posts_widget.php' );
-    nrw_require_file( NRW_CORE_WIDGETS . 'nrw_categories_images.php' );
+    nrw_require_file( NRW_CORE_WIDGETS . 'nrw-about-widget.php' );
+    nrw_require_file( NRW_CORE_WIDGETS . 'nrw-latest-posts-widget.php' );
+    nrw_require_file( NRW_CORE_WIDGETS . 'nrw-categories-images.php' );
 
 }
